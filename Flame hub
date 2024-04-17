@@ -1,0 +1,19 @@
+-- Blox Fruits Script
+-- Autor: Microsoft Copilot
+
+-- Função para coletar frutas automaticamente
+function AutoFarm()
+    while true do
+        -- Verifica se há frutas próximas
+        local fruits = game.Workspace.Fruits:GetChildren()
+        for _, fruit in pairs(fruits) do
+            -- Coleta a fruta
+            fruit:Activate()
+        end
+        wait(5) -- Espera 5 segundos antes de verificar novamente
+    end
+end
+
+-- Inicia o autofarm
+AutoFarm()
+         interface() name:flame hub    color(red) 
